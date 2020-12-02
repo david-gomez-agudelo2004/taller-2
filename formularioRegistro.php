@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIENDA</title>
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
 
     <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#">
          <img src="img/sol.png" width="30" height="30" alt="" loading="lazy">
             PASTELERIA EL SOL
@@ -21,25 +22,19 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">Principal <span class="sr-only">(current)</span></a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="listadoProductos.php">listado Productos</a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="formularioRegistro.php">formulario Registro</a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="factura.php">Factura</a>
             </li>
         </ul>
     </div>
     </nav>
     </header>
-
     <main>
-    
-        <?php 
-            $nombre="Juan";
-        ?>
-
-        <div class="container">
+        <div class="container cod1">
 
         <form class="mt-5" method="POST" action="registrarProductos.php">
         <h3 class="text-center mb-4">Registrar Productos</h3>
@@ -73,11 +68,11 @@
 
             <button type="submit" class="btn btn-info btn-block mt-3" name="boton">registrar</button>
         </form>
-        
+        <hr>
         </div>
     
     </main>
-    <footer style="background-color: gray; color:white;">
+    <footer >
         <hr>
   <div class="container">
     <div class="row">

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermecado</title>
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+<nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#">
          <img src="img/sol.png" width="30" height="30" alt="" loading="lazy">
             PASTELERIA EL SOL
@@ -21,18 +22,18 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">Principal <span class="sr-only">(current)</span></a>
-            </li><li class="nav-item">
-                <a class="nav-link" href="listadoProductos.php">listado Productos</a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
+                <a class="nav-link " href="listadoProductos.php">listado Productos</a>
+            </li><li class="nav-item active">
                 <a class="nav-link" href="formularioRegistro.php">formulario Registro</a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="factura.php">Factura</a>
             </li>
         </ul>
     </div>
     </nav>
 </header>
-<main>
+<main >
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -54,9 +55,10 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-<div class="container">
+<div class="container ">
+  <hr>
     <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-8 cod1">
             <h1 class="text-center">POSTRES</h1>
             <p>¿De dónde viene la costumbre de tomar postre?
                 Tomar el postre es una costumbre dulce, deliciosa y, además, con raíces en el Imperio Romano. El postre más antiguo, la tarta de queso, se remonta a varios siglos atrás
@@ -75,7 +77,7 @@
 
         </div>
         <div class="col-1"></div>
-        <div class="col-3">
+        <div class="col-3 cod1">
             <h2 class="text-center">Los postres más antiguos</h2>
 <p>
     A pesar de que los romanos hayan llegado a nuestros días como los responsables de que culminemos las comidas con la  tradición de tomar postre, parece ser que el postre más antiguo que disfrutamos hoy en día tiene su origen mucho antes de este imperio.
@@ -85,7 +87,7 @@
     </div>
 </div>
     </main>
-    <footer style="background-color: gray; color:white;">
+    <footer >
         <hr>
   <div class="container">
     <div class="row">

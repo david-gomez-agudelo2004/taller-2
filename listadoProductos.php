@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTADO</title>
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-<header> <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+<header> <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#">
          <img src="img/sol.png" width="30" height="30" alt="" loading="lazy">
             PASTELERIA EL SOL
@@ -19,17 +20,18 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">Principal <span class="sr-only">(current)</span></a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="listadoProductos.php">listado Productos</a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="formularioRegistro.php">formulario Registro</a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="factura.php">Factura</a>
             </li>
         </ul>
     </div>
     </nav></header>
 <main>
+<div class="container cod1">
     <?php 
         include("BaseDatos.php");
         $operacionBD=new BaseDatos();
@@ -40,7 +42,7 @@
 <hr>
 
         
-        <div class="container">
+        
     
     <div class="row row-cols-1 row-cols-md-3">
 
@@ -48,10 +50,10 @@
 
                 <div class="col mb-4">
                     
-                    <div class="card h-100 border-primary text-center">
+                    <div class="card h-100 border-primary text-center ">
                     
-                        <div class="card-header" height="200"><img src="<?php echo($producto["foto"]) ?>" class="img-thumbnail"  alt="img"></div>
-                        <div class="card-body ">
+                        <div class="card-header cod3" height="200"><img src="<?php echo($producto["foto"]) ?>" class="img-thumbnail"  alt="img"></div>
+                        <div class="card-body cod2">
                         
                             <h3 class="card-title text-center"><?php echo($producto["nombre"])?></h3>
                             <p class="card-text text-center"><?php echo($producto["marca"])?></p>
@@ -123,7 +125,7 @@
 
 </div>
     </main>
-    <footer style="background-color: gray; color:white;">
+    <footer >
         <hr>
   <div class="container">
     <div class="row">

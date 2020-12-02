@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermecado</title>
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+<nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#">
          <img src="img/sol.png" width="30" height="30" alt="" loading="lazy">
             PASTELERIA EL SOL
@@ -21,11 +22,11 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">Principal <span class="sr-only">(current)</span></a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="listadoProductos.php">listado Productos</a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="formularioRegistro.php">formulario Registro</a>
-            </li><li class="nav-item">
+            </li><li class="nav-item active">
                 <a class="nav-link" href="factura.php">Factura</a>
             </li>
         </ul>
@@ -34,10 +35,10 @@
 </header>
 <main>
 
-    <div class="container">
+    <div class="container ">
         
         <div class="row justify-content-center mt-5">
-            <div class="col-6">
+            <div class="col-6 cod1">
 
                 <form action="factura.php" method="POST">
                     <h3 class="text-center mb-4">Factura de Compra</h3>
@@ -195,12 +196,12 @@
 
 
             </div>
-            <div class="col-1"></div>
-            <div class="col-4"> 
+            <div class="col-1 "> </div>
+            <div class="col-5 "> 
             <img src="" alt="">
-            <img src="img/factura.jpg" width="400" height="200" alt="factura" loadingg="lazy">
+            <img src="img/factura.jpg" width="450" height="200" alt="factura" loadingg="lazy">
             <br> <br>
-            <img src="img/postres.webp" width="400" height="200" alt="postres" loadingg="lazy">
+            <img src="img/postres.webp" width="450" height="200" alt="postres" loadingg="lazy">
             </div>
         </div>
 
@@ -215,7 +216,7 @@
 
 </main>
 
-<footer style="background-color: gray; color:white;">
+<footer >
         <hr>
   <div class="container">
     <div class="row">
